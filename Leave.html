@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave Application Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; }
+        .btn { margin-top: 20px; padding: 12px; background: #007bff; color: #fff; border: none; border-radius: 5px; width: 100%; font-size: 16px; cursor: pointer; }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Leave Application Form</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="empid">Employee ID:</label>
+            <input type="text" id="empid" name="empid" required>
+            
+            <label for="startdate">Leave Start Date:</label>
+            <input type="date" id="startdate" name="startdate" required>
+            
+            <label for="enddate">Leave End Date:</label>
+            <input type="date" id="enddate" name="enddate" required>
+            
+            <label for="leavetype">Type of Leave:</label>
+            <select id="leavetype" name="leavetype" required>
+                <option value="">Select</option>
+                <option value="Annual">Annual Leave</option>
+                <option value="Sick">Sick Leave</option>
+                <option value="Casual">Casual Leave</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label for="reason">Reason for Leave:</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+            
+            <button type="submit" class="btn">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
